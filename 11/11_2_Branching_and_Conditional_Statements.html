@@ -20,7 +20,7 @@ The if-statement is then followed by a block (a series of indented lines of code
 body). The block of code following the if-statement is only executed if the condition evaluates to
 True. Let’s look at an example:</p>
 <div class="linkContainer">
-<iframe src="https://trinket.io/embed/python/da6daf31f9" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="../python-widget.html?src=../sketches/11_2_branching_and_conditional_statements.py" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 <p>This program draws a circle in the middle of the canvas. By default, this circle is small; we use
 global variable radius to represent the circle's radius, and initially, this is set to 10. The conditional
@@ -34,7 +34,7 @@ called whenever any key on the keyboard is pressed.</p>
 <p>So what if we wanted to make our program a little more user-friendly by adding a message that
   tells the user what to do if they’re hitting the wrong key? It might be natural to try this:</p>
 	<div class="linkContainer">
-<iframe src="https://trinket.io/embed/python/662a3e4c62" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="../python-widget.html?src=../sketches/11_2_branching_and_conditional_statements_1.py" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 <p>However, this doesn't quite do what we want. Since the print() call is outside the if-statement's
 code block, it executes regardless of the value of the Boolean expression in
@@ -45,7 +45,7 @@ present them with a message telling them what to do!</p>
   else-statement is the word else followed by a colon. It is written after the if-statement and its block
   of code:</p>
 <div class="linkContainer">
-<iframe src="https://trinket.io/embed/python/676c5fef5b" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="../python-widget.html?src=../sketches/11_2_branching_and_conditional_statements_2.py" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 	<p>Now, if the user hits the + key, the program will increase the circle’s radius. Otherwise, it will
 execute the else statement’s block of code, which prints instructions to the console. In general, the
@@ -54,7 +54,7 @@ flow of execution for conditional statements looks like this:</p>
 	<p>Suppose we want to add functionality to the code, which decreases the size of the circle
 whenever the user presses the - key. Here’s one way we could do that:</p>
 	<div class="linkContainer">
-<iframe src="https://trinket.io/embed/python/263a7a5e67" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="../python-widget.html?src=../sketches/11_2_branching_and_conditional_statements_3.py" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 	<p>Like most other programming languages, Python gives us a cleaner way to handle multiple conditions
 intended to be mutually exclusive (i.e., when we want one branch of many to be executed). In Python,
@@ -66,7 +66,7 @@ elif-statement is False.</p>
 	<p>Here’s a different way we can write our program, where we combine shrinking the circle with
 	  condition the - key and printing out instructions if any key other than + or - is pressed:</p>
 <div class="linkContainer">
-<iframe src="https://trinket.io/embed/python/b3b4a66749" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="../python-widget.html?src=../sketches/11_2_branching_and_conditional_statements_4.py" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 	<p>Note that only one of the three blocks is executed. As soon as an if-statement or elif- statement
 is True, its block is executed, and no more conditional statements are tested. Thus, no more

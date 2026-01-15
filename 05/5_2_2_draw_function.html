@@ -10,23 +10,23 @@
 	<h1>5.2.2 The draw() Function</h1>
 	<p>The draw() function is a function that Processing will automatically and continually call for you for as long as your program is running. By default, Processing will call this function 60 times per second, which is once every 16.67 milliseconds. It might sound like a lot of work for the poor computer, but remember, repetitive work is the exact purpose of computers! Regardless, it’s certainly true that any statements you put inside the definition of the draw() function will get executed an awful lot. The following program increases the size of the canvas using setup(), and then repeatedly draws a circle in the center of the canvas using draw():</p>
 	<div class="linkContainer">
-<iframe src="https://trinket.io/embed/python/3eb3bfd522" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="../python-widget.html?src=../sketches/5_2_2_draw_function.py" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 	<p>Now at this point, you might well be wondering what the difference is between “repeatedly drawing a circle” and just “drawing a circle”. In this particular case, to a human being watching this program when it runs, there is no difference. To a human, the following program will appear to behave the same as the program above.</p>
 	<div class="linkContainer">
-<iframe src="https://trinket.io/embed/python/2ee074ff97" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="../python-widget.html?src=../sketches/5_2_2_draw_function_1.py" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 	<p>To the computer, however, these two programs are quite different. In the first case, using draw() every 16.67 seconds, the computer is dutifully drawing a circle in the middle of the canvas. The fact that there was already a circle displayed in exactly that spot is irrelevant to the computer’s logic. In the second case, the computer just draws the circle once and then doesn’t do anything else; it has no more instructions that it needs to follow. So why use the draw() function at all then? In this particular case, we wouldn’t, as repeatedly re-drawing a circle in the same place serves no constructive purpose. But as soon as we add some interaction to the program, everything will suddenly fall into place.</p>
 	<h2>Interactive Drawing</h2>
 	<p>
 	To make our programs interactive, we need to take user actions into account. One of the simplest things a user can do is move the mouse cursor around on the screen. Fortunately, Processing gives us a straightforward way to track mouse movement. The special Processing words mouseX and mouseY will report for us the x and y coordinates of the mouse cursor (so long as the cursor is anywhere on the Processing canvas). We can then use these values in any way we like. In particular, we can use them as arguments to Processing’s drawing functions. The following program will draw circles wherever the user moves their mouse on the Processing canvas:</p>
 	<div class="linkContainer">
-<iframe src="https://trinket.io/embed/python/0805d6454c" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="../python-widget.html?src=../sketches/5_2_2_draw_function_2.py" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 	<p>We can see above that instead of passing fixed arguments to the ellipse() function, like we did before, we’re now passing in the x and y coordinates of the mouse. Recall that the draw() function is called automatically by Processing 60 times per second. Whenever that happens, Processing checks where the mouse is at the time that the function call happens and lets us access that information using mouseX and mouseY. So each time the draw() function is called, the mouse cursor may be at a different location, and we get a new circle drawn at that location.</p>
 	<p>If we want to play around with this a little, we can adjust how frequently Processing calls the draw() function by using the frameRate() function. frameRate() requires a single number as an argument, and that is the number of times per second that Processing should call the draw() function. If we call the frameRate() function with an argument of 1, then Processing will only call draw()— and consequently, only update its canvas — once per second. This is really quite slow, as you will see if you try running the following program:</p>
 	<div class="linkContainer">
-<iframe src="https://trinket.io/embed/python/8561ca6883" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="../python-widget.html?src=../sketches/5_2_2_draw_function_3.py" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 	<p>Due to the very slow frame rate, with this program you can move the mouse quite a long way before Processing gets around to drawing a new circle.</p>
 	<br>

@@ -10,11 +10,11 @@
 <h1>4.2.2 Stroke Colour</h1>
 <p>The stroke() function sets the colour that Processing will use to draw lines and the borders around all its shapes. It’s worth noting that calling this function by itself doesn’t appear to do anything on the canvas. We’ll also need some function calls that draw some lines or shapes to see the effect of calling the stroke() function. The following program will draw a pair of parallel white lines on a black background.</p>
 <div class="linkContainer">
-<iframe src="https://trinket.io/embed/python/c628adf9cf" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="../python-widget.html?src=../sketches/4_2_2_stroke_colour.py" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 <p>Notice that in the program above, we only called the stroke() function once, but both of the lines that get drawn will be white. That’s because calling the stroke() function changes the default colour for all lines and shapes until it gets called again. If we call the stroke() function a second time, then any shapes drawn after that point will use the new colour, but it won’t change the colour of any shapes already drawn. Think of stroke() in the sense of painting on a real-life canvas with a paintbrush; you dab the paintbrush into the paint colour you want to paint with until you dab the paintbrush into another paint colour, from whence all new strokes after that will take on the new paint colour. For example, the following program draws two white lines followed by two gray lines, all on a black background.</p>
 <div class="linkContainer">
-<iframe src="https://trinket.io/embed/python/bda900307a" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="../python-widget.html?src=../sketches/4_2_2_stroke_colour_1.py" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 <p>It might occur to you that there are other ways Processing could have handled the issue of setting colours for shapes. For instance, instead of a default stroke colour, the authors could have designed the line() function (and all other functions that draw shapes) to have an extra function parameter that specifies the colour of that particular line or shape. Doing it the way they did was a conscious design decision that the Processing authors made. Whether or not this decision was the right one depends on what the people who use Processing — people like you — find most useful.</p>
 <br>

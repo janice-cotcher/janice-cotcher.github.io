@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Python Processing Interactive Editor</title>
+    
+    <!-- Load Pyodide -->
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.25.0/full/pyodide.js"></script>
+    
+    <!-- Load p5.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            background: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .editor-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            flex: 1;
+            overflow: hidden;
+        }
+        
+        .code-panel {
+            background: #1e1e1e;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        
+        .code-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            flex-shrink: 0;
+        }
+        
+        .code-header h3 {
+            margin: 0;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        #run-button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        
+        #run-button:hover:not(:disabled) {
+            background: #45a049;
+        }
+        
+        #run-button:disabled {
+            background: #666;
+            cursor: not-allowed;
+        }
+        
+        #code-editor {
+            flex: 1;
+            width: 100%;
+            background: #1e1e1e;
+            color: #d4d4d4;
+            border: 1px solid #333;
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.6;
+            padding: 15px;
+            resize: none;
+            outline: none;
+            tab-size: 4;
+            overflow-y: auto;
+        }
+        
+        .canvas-panel {
+            background: #c0c0c0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            position: relative;
+            overflow: auto;
+        }
+        
+        #canvas-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #status {
+            padding: 12px 20px;
+            background: #f9f9f9;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #666;
+            flex-shrink: 0;
+        }
+        
+        .error {
+            color: #d32f2f;
+        }
+        
+        .success {
+            color: #388e3c;
+        }
+        
+        .loading {
+            color: #1976d2;
+        }
+        
+        @media (max-width: 768px) {
+            .editor-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="editor-container">
+            <div class="code-panel">
+                <div class="code-header">
+                    <h3>main.py</h3>
+                    <button id="run-button" disabled>Loading Python...</button>
+                </div>
+                <textarea id="code-editor" spellcheck="false"># Loading code...</textarea>
+            </div>
+            <div class="canvas-panel">
+                <div id="canvas-container"></div>
+            </div>
+        </div>
+        <div id="status">Initializing Python environment...</div>
+    </div>
+
+    <script>
+        let pyodide;
+        let currentSketch;
+        
+        // Processing API wrapper for Python
+        const processingWrapper = `
+import js
+from js import p5
+
+# Global variables for sketch state
+_sketch_instance = None
+_setup_fn = None
+_draw_fn = None
+
+def size(w, h):
+    js.createCanvas(w, h)
+
+def ellipse(x, y, w, h=None):
+    if h is None:
+        h = w
+    _sketch_instance.ellipse(x, y, w, h)
+
+def rect(x, y, w, h):
+    _sketch_instance.rect(x, y, w, h)
+
+def circle(x, y, d):
+    _sketch_instance.circle(x, y, d)
+
+def line(x1, y1, x2, y2):
+    _sketch_instance.line(x1, y1, x2, y2)
+
+def point(x, y):
+    _sketch_instance.point(x, y)
+
+def background(*args):
+    _sketch_instance.background(*args)
+
+def fill(*args):
+    _sketch_instance.fill(*args)
+
+def stroke(*args):
+    _sketch_instance.stroke(*args)
+
+def no_fill():
+    _sketch_instance.noFill()
+
+def no_stroke():
+    _sketch_instance.noStroke()
+
+def stroke_weight(w):
+    _sketch_instance.strokeWeight(w)
+
+def text(txt, x, y):
+    _sketch_instance.text(str(txt), x, y)
+
+def run():
+    pass  # Handled by the JavaScript side
+`;
+
+        // Get URL parameters
+        function getURLParams() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                code: params.get('code'),
+                src: params.get('src')
+            };
+        }
+
+        // Load code from external file
+        async function loadCodeFromFile(url) {
+            try {
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error(`Failed to load: ${response.status}`);
+                }
+                return await response.text();
+            } catch (error) {
+                console.error('Error loading code file:', error);
+                updateStatus('✗ Failed to load code file: ' + error.message, 'error');
+                return null;
+            }
+        }
+
+        // Decode base64 code
+        function decodeCode(encodedCode) {
+            try {
+                return decodeURIComponent(atob(encodedCode));
+            } catch (error) {
+                console.error('Error decoding code:', error);
+                return null;
+            }
+        }
+
+        async function initPyodide() {
+            try {
+                updateStatus('Loading Python environment... (this may take a moment)', 'loading');
+                pyodide = await loadPyodide();
+                await pyodide.runPythonAsync(processingWrapper);
+                
+                // Load code based on URL parameters
+                const params = getURLParams();
+                let code = null;
+                
+                if (params.src) {
+                    // Load from external file
+                    updateStatus('Loading code file...', 'loading');
+                    code = await loadCodeFromFile(params.src);
+                } else if (params.code) {
+                    // Load from URL parameter (base64 encoded)
+                    code = decodeCode(params.code);
+                }
+                
+                if (code) {
+                    document.getElementById('code-editor').value = code;
+                } else {
+                    // Default code if nothing specified
+                    document.getElementById('code-editor').value = `def setup():
+    size(200, 200)
+
+def draw():
+    size_var = 100
+    count = 0
+    while count < 10:
+        ellipse(100, 100, size_var, size_var)
+        size_var = size_var - 10
+        count = count + 1`;
+                }
+                
+                updateStatus('✓ Python ready! Edit code and click "Run"', 'success');
+                document.getElementById('run-button').disabled = false;
+                document.getElementById('run-button').innerText = '▶ Run';
+            } catch (error) {
+                updateStatus('✗ Failed to initialize Python: ' + error.message, 'error');
+            }
+        }
+
+        function updateStatus(message, type = '') {
+            const statusEl = document.getElementById('status');
+            statusEl.innerText = message;
+            statusEl.className = type;
+        }
+
+        async function runCode() {
+            const button = document.getElementById('run-button');
+            button.disabled = true;
+            button.innerText = '⏳ Running...';
+            updateStatus('Executing code...', 'loading');
+
+            // Remove old canvas
+            if (currentSketch) {
+                currentSketch.remove();
+                currentSketch = null;
+            }
+            const container = document.getElementById('canvas-container');
+            container.innerHTML = '';
+
+            try {
+                const code = document.getElementById('code-editor').value;
+                
+                // Create new p5 sketch
+                currentSketch = new p5((sketch) => {
+                    // Make canvas functions available globally for Python
+                    window.createCanvas = (w, h) => sketch.createCanvas(w, h);
+                    
+                    sketch.setup = async function() {
+                        try {
+                            // Store sketch instance for Python to use
+                            pyodide.globals.set('_sketch_instance', sketch);
+                            
+                            // Execute user code
+                            await pyodide.runPythonAsync(code);
+                            
+                            // Get setup function if defined
+                            const setupFn = pyodide.globals.get('setup');
+                            if (setupFn) {
+                                setupFn();
+                            }
+                        } catch (error) {
+                            console.error('Setup error:', error);
+                            updateStatus('✗ Error in setup: ' + error.message, 'error');
+                        }
+                    };
+
+                    sketch.draw = function() {
+                        try {
+                            const drawFn = pyodide.globals.get('draw');
+                            if (drawFn) {
+                                drawFn();
+                            }
+                        } catch (error) {
+                            console.error('Draw error:', error);
+                            sketch.noLoop();
+                            updateStatus('✗ Error in draw: ' + error.message, 'error');
+                        }
+                    };
+                }, 'canvas-container');
+
+                updateStatus('✓ Code executed successfully!', 'success');
+
+            } catch (error) {
+                updateStatus('✗ Error: ' + error.message, 'error');
+                console.error(error);
+            } finally {
+                button.disabled = false;
+                button.innerText = '▶ Run';
+            }
+        }
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            initPyodide();
+            document.getElementById('run-button').addEventListener('click', runCode);
+            
+            // Allow Ctrl/Cmd+Enter to run
+            document.getElementById('code-editor').addEventListener('keydown', (e) => {
+                if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+                    runCode();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

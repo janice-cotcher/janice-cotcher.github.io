@@ -10,17 +10,17 @@
 <h1>7.3 Using Variables in Functions</h1>
 <p>Recall that functions give us a mechanism by which we can encapsulate algorithms. Since variables are very useful for writing almost any kind of algorithm, we can certainly use variables in functions:</p>
 <div class="linkContainer">
-<iframe src="https://trinket.io/embed/python/0bf78b9df9" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="../python-widget.html?src=../sketches/7_3_variables_in_functions.py" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 <p>In the preceding program’s draw() function, we associate variable size with a value of 10. We then make a function call to ellipse() using the value of the size variable as both the 3rd and 4th arguments in the function call. This is the same as just calling ellipse(100, 100, 10, 10), since we gave size a value of 10.</p>
 <p>Since the purpose of functions is encapsulation, any variables that we use as part of a function are <strong>only visible to that function.</strong> For example, the following code will result in an error:</p>
 	<div class="linkContainer">
-<iframe src="https://trinket.io/embed/python/1174932547" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="../python-widget.html?src=../sketches/7_3_variables_in_functions_1.py" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 	<p>Since the size variable is assigned a value in the setup() function, when we try to use it in the draw() function, Python will complain that draw() doesn’t know anything about a variable called size.</p>
 	<p>Finally, it’s worth noting that function parameters, which we already learned about, are also really just variables with one special property: when the function is called, the parameter variables are automatically initialized with the argument values that were used in the function call. After that, they’re just normal variables in every way. The following program re-uses a function parameter for drawing a donut (a circle within a circle):</p>
 <div class="linkContainer">
-<iframe src="https://trinket.io/embed/python/949230771f" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="../python-widget.html?src=../sketches/7_3_variables_in_functions_2.py" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 <p>Notice how in the program above, we were able to change the value associated with the size variable by setting it to one-half of its original value and then use it again in the second function call to ellipse().</p>
 <br>

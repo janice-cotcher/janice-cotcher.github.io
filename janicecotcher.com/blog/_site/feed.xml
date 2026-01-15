@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://janicecotcher.com/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://janicecotcher.com/blog/" rel="alternate" type="text/html" /><updated>2026-01-06T08:34:58+00:00</updated><id>https://janicecotcher.com/blog/feed.xml</id><title type="html">Into the Mind of Janice Cotcher</title><subtitle>Teacher. Student. Polymath. After over 15 years of teaching, I returned to university to complete a BSc in Computer Science and a Certificate of Extended Studies in Inclusive Education. “To be able to be caught up into the world of thought - that is being educated.” Edith Hamilton</subtitle><entry><title type="html">Positive Compliance</title><link href="https://janicecotcher.com/blog/2025/01/31/positive-compliance/" rel="alternate" type="text/html" title="Positive Compliance" /><published>2025-01-31T00:00:00+00:00</published><updated>2025-01-31T00:00:00+00:00</updated><id>https://janicecotcher.com/blog/2025/01/31/positive-compliance</id><content type="html" xml:base="https://janicecotcher.com/blog/2025/01/31/positive-compliance/"><![CDATA[<p>I am currently working on an Inclusive Education Certification, and I dropped one of the classes after I read the first chapter of our textbook. The whole course is based on Positive Behavioural Interventions and Supports (PBIS), which is basically Applied Behavioural Analysis using praise instead of punishment. Here’s the letter I wrote to the instructor and Faculty of Education because dropping the class just wasn’t enough.</p>
+
+<p>Dear Faculty of Education Administration and [Redacted Instructor],</p>
+
+<p>I am writing to inform you of my decision to withdraw from [Classroom Management Class]. After careful review of the course materials, particularly the sections covering Positive Behavioral Interventions and Supports (PBIS), I have significant concerns about the potential impact of these behavioural management approaches on autistic students.</p>
+
+<p>Recent research and advocacy perspectives have highlighted significant concerns about PBIS and its foundations in Applied Behavior Analysis (ABA). Multiple studies have documented that these approaches can have unintended negative effects on autistic students’ well-being and development. For example, a 2022 paper in the Journal of Autism and Developmental Disorders (Leaf et al., 2022) discusses how PBIS frameworks can lead to problematic implementations that may negatively impact autistic students’ psychological well-being.</p>
+
+<p>Additionally, the National Autistic Society has raised concerns about PBIS and emphasizes the importance of person-centred support that promotes dignity and self-determination. As someone committed to creating truly inclusive educational environments, I feel I must align my professional development with approaches that prioritize students’ emotional well-being and respect neurodiversity.</p>
+
+<p>I appreciate the course’s goal of preparing teachers for inclusive classroom management. However, I believe I need to pursue alternative approaches that better align with the current understanding of neurodiversity-affirming practices.</p>
+
+<p>Thank you for your understanding. I would welcome any opportunity to discuss this further or to explore alternative courses focused on inclusive education.</p>
+
+<p>Sincerely,<br />
+Janice Cotcher</p>
+
+<p>References:</p>
+
+<p>Leaf, J. B., Cihon, J. H., Leaf, R., McEachin, J., Liu, N., Russell, N., … &amp; Khosrowshahi, D. (2022). <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9114057/">Concerns about ABA-based intervention: An evaluation and recommendations.</a> <em>Journal of autism and developmental disorders</em>, <em>52</em>(6), 2838-2853.</p>]]></content><author><name>Janice Cotcher</name></author><summary type="html"><![CDATA[I am currently working on an Inclusive Education Certification, and I dropped one of the classes after I read the first chapter of our textbook. The whole course is based on Positive Behavioural Interventions and Supports (PBIS), which is basically Applied Behavioural Analysis using praise instead of punishment. Here’s the letter I wrote to the instructor and Faculty of Education because dropping the class just wasn’t enough.]]></summary></entry><entry><title type="html">Youre Capable Of More Than You Think You Are</title><link href="https://janicecotcher.com/blog/2022/10/14/youre-capable-of-more-than-you-think-you-are/" rel="alternate" type="text/html" title="Youre Capable Of More Than You Think You Are" /><published>2022-10-14T00:00:00+00:00</published><updated>2022-10-14T00:00:00+00:00</updated><id>https://janicecotcher.com/blog/2022/10/14/youre-capable-of-more-than-you-think-you-are</id><content type="html" xml:base="https://janicecotcher.com/blog/2022/10/14/youre-capable-of-more-than-you-think-you-are/"><![CDATA[<p>Last night I remembered my grade 9 art class where this same boy told our teacher he couldn’t draw so he wasn’t even going to try. She told him he probably used to love to draw when he was little until someone told him he wasn’t doing it right or made fun of him. She encouraged him he did have the ability but just lack the training. That is what she was here for. I thought to myself last night how many times in my life have I given up thinking I can’t do something because of the criticism of another?</p>]]></content><author><name>Janice Cotcher</name></author><summary type="html"><![CDATA[Last night I remembered my grade 9 art class where this same boy told our teacher he couldn’t draw so he wasn’t even going to try. She told him he probably used to love to draw when he was little until someone told him he wasn’t doing it right or made fun of him. She encouraged him he did have the ability but just lack the training. That is what she was here for. I thought to myself last night how many times in my life have I given up thinking I can’t do something because of the criticism of another?]]></summary></entry><entry><title type="html">Problems Abound</title><link href="https://janicecotcher.com/blog/2022/09/15/problems-abound/" rel="alternate" type="text/html" title="Problems Abound" /><published>2022-09-15T00:00:00+00:00</published><updated>2022-09-15T00:00:00+00:00</updated><id>https://janicecotcher.com/blog/2022/09/15/problems-abound</id><content type="html" xml:base="https://janicecotcher.com/blog/2022/09/15/problems-abound/"><![CDATA[<p><img src="/blog/assets/img/2022/09/pexels-photo-313690.jpg?w=1024" alt="" /></p>
+
+<p>Frustrated Computer User</p>
+
+<p>I thought I had it all figured out, but I didn’t. After getting <a href="/blog/2022/09/12/thankfully-some-progress/">the initial installations of Visual Studio Code and Python completed,</a> VS wasn’t working today. The student created a couple of simple programs, but when we try to run them nothing happens. I’m not sure what to do. Python shows up as the initializer on the status bar for VS, but obviously is not running. VS is working properly on my computer, but I was able to install it the normal way. I looked on some forums, but I can’t seem to find anything.</p>
+
+<p>The student has been communicating online with some visually impaired programmers and they recommend <a href="https://notepad-plus-plus.org/downloads/">Notepad ++</a>. It’s a great idea, but I don’t know if we’ll be able to install it; I hate being so dependent on IT. Visual Studio is working fine as an editor, but it’s just not running the code. Maybe we need to try to install it again and see if that helps. In the meantime, the student is going to see what she can figure out at home (it helps that she’s so keen to learn). Worst case scenario, the student brings her personal laptop from home where we can install Python. For myself, I’m hoping learning VS better will help in the long run.</p>]]></content><author><name>Janice Cotcher</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Thankfully Some Progress</title><link href="https://janicecotcher.com/blog/2022/09/12/thankfully-some-progress/" rel="alternate" type="text/html" title="Thankfully Some Progress" /><published>2022-09-12T00:00:00+00:00</published><updated>2022-09-12T00:00:00+00:00</updated><id>https://janicecotcher.com/blog/2022/09/12/thankfully-some-progress</id><content type="html" xml:base="https://janicecotcher.com/blog/2022/09/12/thankfully-some-progress/"><![CDATA[<p><img src="/assets/img/2022/09/img_6593.jpg?w=800" alt="" /></p>
+
+<p><a href="https://commons.wikimedia.org/wiki/File:Macro_laptop_coding_(Unsplash).jpg">Marc Mueller seven11nash</a>, CC0, via Wikimedia Commons</p>
+
+<p>As I <a href="/blog/2022/09/02/new-year-new-challenges/">previously wrote</a>, one of my students in my introductory computer science class has a visual impairment. Since then, I have met the student and we’ve done some experimenting with software.</p>
+
+<p>The student is in grade 12 and legally blind. She either uses braille or a screen reader to read. Fortunately, she has her own board-issued laptop. She does have some Python coding experience already. Today, she apologized for only know how to make a calculator in Python. I tried to encourage her that she’s away ahead of almost everyone else. We discussed that she would work on a self-paced course using the textbook, <a href="https://nostarch.com/pythoncrashcourse2e">Python Crash Course</a>.</p>
+
+<p>After some investigation, I discovered that <a href="https://code.visualstudio.com/docs/editor/accessibility">Visual Studio Code</a> can be installed in a user profile, so I do not need administrative access. The student told me today that she already has some experience using VS! That is going to be a great help, but we will have to do a lot of figuring out together.</p>
+
+<p>Today, after we installed VS and added Python as a language, we discovered that Python is not included, but only accesses an outside file. We tried to install Python to the user profile, but it didn’t work. Instead, we downloaded a beginner Python IDE, <a href="https://thonny.org/">Thonny</a>. Thonny has a lot of shortcuts, but doesn’t give feedback to the screen reader whether the cursor is in the editor or the <a href="https://en.wikipedia.org/wiki/Shell_(computing)?wprov=sfti1">shell</a>. Lucky for me, just as I was emailing IT that we needed Python installed ASAP, the student found in the Python documentation that there’s a version of Python that doesn’t need to be installed (just a folder to be unzipped, called the <a href="https://www.python.org/downloads/windows/">embedded package</a>). I initialized Python in VS and everything works great.</p>
+
+<p>Next steps are to figure out how to connect GitHub to VS, so the student can submit her work. After that, I really need to learn how to use VS better. I played around with it a bit about four years ago, and since then former students have used it, but haven’t needed my help. After that, I need to start thinking about how to adapt the advanced class the visually impaired student will be taking next semester.</p>
+
+<hr />
+
+<h3 id="comments">Comments</h3>
+
+<blockquote>
+  <p>Author: Problems abound | Educational &amp; Other Musings of Janice Cotcher<br />
+Date: 2022-09-15 17:57:30</p>
+</blockquote>
+
+<p>[…] ← Thankfully some progress […]</p>]]></content><author><name>Janice Cotcher</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">New Year New Challenges</title><link href="https://janicecotcher.com/blog/2022/09/03/new-year-new-challenges/" rel="alternate" type="text/html" title="New Year New Challenges" /><published>2022-09-03T00:00:00+00:00</published><updated>2022-09-03T00:00:00+00:00</updated><id>https://janicecotcher.com/blog/2022/09/03/new-year-new-challenges</id><content type="html" xml:base="https://janicecotcher.com/blog/2022/09/03/new-year-new-challenges/"><![CDATA[<p><img src="/assets/img/2022/09/pexels-photo-5473957.jpg?w=683" alt="" /></p>
+
+<p>I’ve been working as a Computer Science teacher for four years now, and finally I have no split classes! With the new year, my newest challenge is teaching coding to a visually impaired student. I have a lot of figure out and I want to document it.</p>
+
+<p>My first challenge was figuring out what programming language for her to learn. In my introductory coding class, my students learn <a href="http://creativecomputing.ca">Python Mode for Processing</a>. Since Processing creates visual art through coding, that wasn’t an option.</p>
+
+<p>First, I researched what programming language has the best accessibility for visual impairment and I found suggestions for <a href="https://www.perkins.org/resource/apples-new-accessible-coding-resources-swift-playgrounds/">Apple’s Swift</a>, but the problem is that it only works for iPad and Macs. Since the student has a Windows laptop, this was out of the question.</p>
+
+<p>Ultimately, I decided that the student would learn Python, so there was some similarities between what she and her peers are learning. in the past, my students have used P<a href="https://nostarch.com/pythoncrashcourse2e">ython Crash Course</a> (there’s even <a href="https://ehmatthes.github.io/pcc/">solutions</a> to all the exercises). A couple months ago, I had the teacher who runs the Visual Impairment Program at my school look at the textbook. She said that the text is “clean”, so it should work well with a screen reader. Even so, I want to be able to try it for myself to hear what it sounds like. I’m worried that a screen reader will not read the formatting properly, as so much of coding is syntax and punctuation. After <a href="https://www.researchgate.net/publication/330216308_Teaching_Algorithms_for_Visually_Impaired_and_Blind_Students_using_Physical_Flowcharts_and_Screen_Readers">some research</a>, I found that <a href="https://www.freedomscientific.com/products/software/jaws/">JAWS</a> and <a href="https://www.nvaccess.org/download/">NVDA</a> work best and the student has access to both. We’ll have to do some experimenting with the screen readers to see how well they work.</p>
+
+<p>The next problem I need to solve is what development environment to use for Python. After some research, I found that <a href="https://www.jetbrains.com/help/pycharm/accessibility.html">PyCharm</a> and <a href="https://code.visualstudio.com/docs/editor/accessibility">Visual Studio Code</a> were the best development environments for accessibility. Unfortunately, neither program is on the approved software list for my school division, and it’s a long process to get new software approved (It once took me 8 months). Since I do not have access to install software, IT support will install Python and we will try to use its <a href="https://en.m.wikipedia.org/wiki/IDLE">IDLE</a>. The text examples in Python Crash Course use IDLE, so it might make it easier in that aspect. We will try it and see how it works, if it doesn’t I will try to convince IT to install Visual Studio. <a href="https://nvda.groups.io/g/nvda/topic/operating_the_python_shell/32284863">I’m not hopeful it will work</a>.</p>
+
+<p>I found a video example of using NVDA and Visual Studio Code:</p>
+
+<p><a href="https://youtu.be/DPEy9M31WjI">Set up a screen reader \&amp; run first Python script</a></p>
+
+<p>My next issue will be how the student will submit their files for assignments. I have had success in the past with students submitting files to Google Classroom, so we will try that to begin with. I don’t know if this student has ever used Google Classroom, but according to Google Support, <a href="https://support.google.com/edu/classroom/answer/6084551?hl=en">it should be possible</a>. Related to this, we will have to work on things like file management and naming conventions.</p>
+
+<hr />
+
+<h3 id="comments">Comments</h3>
+
+<blockquote>
+  <p>Author: Thankfully some progress | Educational &amp; Other Musings of Janice Cotcher<br />
+Date: 2022-09-12 14:42:56</p>
+</blockquote>
+
+<p>[…] ← New year, new challenges […]</p>]]></content><author><name>Janice Cotcher</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Daily Reminders Of The Past</title><link href="https://janicecotcher.com/blog/2018/11/05/daily-reminders-of-the-past/" rel="alternate" type="text/html" title="Daily Reminders Of The Past" /><published>2018-11-05T00:00:00+00:00</published><updated>2018-11-05T00:00:00+00:00</updated><id>https://janicecotcher.com/blog/2018/11/05/daily-reminders-of-the-past</id><content type="html" xml:base="https://janicecotcher.com/blog/2018/11/05/daily-reminders-of-the-past/"><![CDATA[<p><img src="/assets/img/2018/11/img_1995.jpg" alt="" /></p>
+
+<p>Note: I started this post yesterday and couldn’t finish it until today. Thinking about all my aches and pains just got too depressing.</p>
+
+<p>Two weeks before I started Grade 8, my family visited my aunt in St. Louis, Missouri. Like many teens in the early 90s, I rollerbladed everywhere. One evening, I was skating around my aunt’s cul-de-sac when one of the wheels got wedged in a crack in the roads. I hinged forwarded and tried to brace my fall while my hands. My right arm gave way and my head crashed into the asphalt.</p>
+
+<p>I don’t know how long I blackout for, but when I came to my aunt and mom were around me. My head hurt, but my arm and wrist were in searing pain. My mom examined it and said it was just a sprain. My parents hadn’t bought travel insurance, so they didn’t want to bother taking me to an American emergency room.</p>
+
+<p>As the days went on, my arm and wrist did not get better. In fact, anytime moved them I was unbearably painful. I couldn’t convince my parents that my arm needed to be checked out by a doctor. Their solution was to get me a sling.</p>
+
+<p>Weeks later I was back in school with a sling and arm was not any better. I finally convinced my mom to take me to the walk-in clinic, even though she still thought it was a sprain. The walk-in doctor thought it was a sprain as well, but since it wasn’t any better after more than two weeks, so he decided my arm needed to be X-rayed. Even though there was no bruising or swelling, it was still possibly a hairline fracture. The x-rays showed I had a hairline fracture in my radial bone and a dislocated wrist. Suddenly, I felt vindicated.</p>
+
+<p>Even after the cast came off, my wrist never was the same. It would become “clicky” and pop out of place. I learned to manipulate my wrist so the joint would move back into place. In the last five years, my wrist has gotten worse. The joint still slips out of position easily, but now it becomes painful when it does. A chiropractor told me the joint is hypermobile, but I can’t find any evidence to support instances caused by trauma. I really should be in physiotherapy for my wrist, but I’m already being treated for shoulder and hip problems. [1][2]</p>
+
+<p>Yesterday, I attended a mandatory first aid course for work. Performing CPR on a dummy multiple times in a short period is terrible on the wrists. Last night I could barely use my hands, so I wrapped my wrist in kinetic tape.</p>
+
+<p>It’s hard to put the past behind you when you’re still dealing with the consequences. Each ache and pain throughout my body reminds me of the physical traumas of my past. Sometimes I wonder if I’ll ever forget about that hot summer night in August 1991.</p>
+
+<ol>
+  <li>
+    <p>Can you see why it was so depressing for me to finish this post?</p>
+  </li>
+  <li>
+    <p>The author recognizes that was a lot of buts in a row</p>
+  </li>
+</ol>]]></content><author><name>Janice Cotcher</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">The Joy Of Missing Out</title><link href="https://janicecotcher.com/blog/2018/11/04/the-joy-of-missing-out/" rel="alternate" type="text/html" title="The Joy Of Missing Out" /><published>2018-11-04T00:00:00+00:00</published><updated>2018-11-04T00:00:00+00:00</updated><id>https://janicecotcher.com/blog/2018/11/04/the-joy-of-missing-out</id><content type="html" xml:base="https://janicecotcher.com/blog/2018/11/04/the-joy-of-missing-out/"><![CDATA[<p>I check Facebook less, and I don’t regret it at all. In fact, often when I do check it, I wonder why I bothered. I don’t have <a href="https://en.wikipedia.org/wiki/Fear_of_missing_out">FOMO</a>, I have <a href="https://www.nytimes.com/2018/07/12/style/joy-of-missing-out-summer.html">JOMO</a>.</p>
+
+<p>I started <a href="/blog/2018/11/01/i-was-overwhelmed-and-im-sure-of-that-one/">a new job</a>, and I have very little free time, why would I waste it on social media? Additionally, I’ve reduced my screen time before bed to help me sleep.</p>
+
+<p>It’s calmed down a bit, but I feel like everyone is fighting on Facebook. I unfriended and muted several people, but it didn’t help much. I find checking Facebook so exhausting. I find it a little easier to handle Twitter because I can filter content if it’s stressing me out too much or if I’m short on time:</p>
+
+<p><img src="/assets/img/2018/11/img_556aa699aeb5-1.jpeg" alt="IMG_556AA699AEB5-1" /></p>
+
+<p>I receive daily emails twice a day updating me on current events.  Recent events have shown us <a href="https://www.wired.com/story/you-cant-trust-facebooks-search-for-trusted-news/">Facebook is an unreliable source or news</a>, so why bother?</p>
+
+<p>More importantly, I think Facebook was giving me a false sense of keeping in touch with friends and family. I’m tried of so many of conversations based on “Did you see ______ on Facebook?”. I need to talk more about IRL than my Facebook newsfeed.</p>]]></content><author><name>Janice Cotcher</name></author><summary type="html"><![CDATA[I check Facebook less, and I don’t regret it at all. In fact, often when I do check it, I wonder why I bothered. I don’t have FOMO, I have JOMO.]]></summary></entry><entry><title type="html">All I Remember Is The Blood</title><link href="https://janicecotcher.com/blog/2018/11/02/all-i-remember-is-the-blood/" rel="alternate" type="text/html" title="All I Remember Is The Blood" /><published>2018-11-02T00:00:00+00:00</published><updated>2018-11-02T00:00:00+00:00</updated><id>https://janicecotcher.com/blog/2018/11/02/all-i-remember-is-the-blood</id><content type="html" xml:base="https://janicecotcher.com/blog/2018/11/02/all-i-remember-is-the-blood/"><![CDATA[<p>Today I’m working through the online portion of my first aid course. Every time I take the course, I think about the times I actually used my training. In particular, the time I <a href="/blog/2011/03/07/socially-disconnected/">helped</a> <a href="/blog/2011/03/07/socially-disconnected/">an elderly man with a severe cut on his face</a>.</p>
+
+<p>Reading what I wrote 7 years ago, the experience seems so foreign to me now. Snippets of memories remain and all I remember is the blood. The blood was everywhere: on the stairs, on his face, on my hands. I don’t remember what the man looks like, but I remember the shape of his wounds perfectly. I don’t remember crying in the bathroom later, but I remember washing the blood off my hands.</p>
+
+<p>As much as you prepare, you really don’t know how you will react until you’re in the moment. I wish I had put on gloves before I applied pressure to the wound. I was on a bus, so they must have had a first aid kit. It didn’t occur to me until the EMTs arrived and I noticed my bloody hands. Heaven forbid I ever have to deal with a situation like that again, but at least this time I know what I’d do differently.</p>]]></content><author><name>Janice Cotcher</name></author><summary type="html"><![CDATA[Today I’m working through the online portion of my first aid course. Every time I take the course, I think about the times I actually used my training. In particular, the time I helped an elderly man with a severe cut on his face.]]></summary></entry><entry><title type="html">I Was Overwhelmed And Im Sure Of That One</title><link href="https://janicecotcher.com/blog/2018/11/01/i-was-overwhelmed-and-im-sure-of-that-one/" rel="alternate" type="text/html" title="I Was Overwhelmed And Im Sure Of That One" /><published>2018-11-01T00:00:00+00:00</published><updated>2018-11-01T00:00:00+00:00</updated><id>https://janicecotcher.com/blog/2018/11/01/i-was-overwhelmed-and-im-sure-of-that-one</id><content type="html" xml:base="https://janicecotcher.com/blog/2018/11/01/i-was-overwhelmed-and-im-sure-of-that-one/"><![CDATA[<p>New Curriculua. New Language. New Job.</p>
+
+<p>At the end of the first day back for teachers, I received a call that the computer science teacher at a local high school quit. Since I had previously covered a long-term subbing stint for this teacher, the principal asked if I would be able to fill the position. Even though I have never taught my own class of computer science before, I’ve been a technology teacher since dial-up internet was the only option. I completed computer science classes in university nearly a decade ago, and that makes me as qualified as you can get these days.</p>
+
+<p>Before I knew I would be teaching computer science this year, I started to learn Visual Basic and more Java. These languages seem outdated now, especially for the brand new <a href="https://www.edonline.sk.ca/webapps/moe-curriculum-BBLEARN/CurriculumOutcomeContent?id=446">computer science curricula</a>.  I made contact with other CS teachers in the school division, and with what resources they were able to share with me, I decided to torture myself by learning a new programming language, <a href="https://www.python.org/">Python</a>. Don’t get me wrong, teaching Python was the right decision, it just takes a lot of time to learn a new language on top of developing lessons and assessments for new curriculua. There will be much less prep work next semester when I have a better handle on Python, and I only need to refine my teaching resources.</p>
+
+<p>Here’s what I’m covering right now:
+<a href="https://www.edonline.sk.ca/webapps/moe-curriculum-BBLEARN/CurriculumOutcomeContent?id=446">Computer Science 20</a>: <a href="https://py.processing.org/">Python Mode for Processing</a></p>
+<ul>
+  <li>I’m trying to focus more on how programming languages can be used for game design, animations, and graphic arts. I want it to be more of a general interest CS class because many students take it for the 20-level science credit for graduation.</li>
+</ul>
+
+<h2 id="computer-science-30-python-with-more-of-a-focus-on-science-applications"><a href="https://www.edonline.sk.ca/webapps/moe-curriculum-BBLEARN/CurriculumOutcomeContent?id=446">Computer Science 30:</a> Python (with more of a focus on science applications)</h2>
+
+<h3 id="comments">Comments</h3>
+
+<blockquote>
+  <p>Author: The Joy of Missing Out | Educational &amp; Other Musings of Janice Cotcher<br />
+Date: 2018-11-04 10:11:12</p>
+</blockquote>
+
+<p>[…] started a new job, and I have very little free time, why would I waste it on social media? Additionally, I’ve […]</p>]]></content><author><name>Janice Cotcher</name></author><summary type="html"><![CDATA[New Curriculua. New Language. New Job.]]></summary></entry><entry><title type="html">Setting Up Python At Home</title><link href="https://janicecotcher.com/blog/2018/09/08/setting-up-python-at-home/" rel="alternate" type="text/html" title="Setting Up Python At Home" /><published>2018-09-08T00:00:00+00:00</published><updated>2018-09-08T00:00:00+00:00</updated><id>https://janicecotcher.com/blog/2018/09/08/setting-up-python-at-home</id><content type="html" xml:base="https://janicecotcher.com/blog/2018/09/08/setting-up-python-at-home/"><![CDATA[<h2 id="windows">Windows</h2>
+
+<p>Step 1: <a href="https://www.python.org/downloads/">Download and install Python</a>
+Step 2: Download <a href="https://atom.io/">Atom</a>
+Step 3: Install and customize Atom
+How to install and run Windows Command from Atom
+[youtube https://www.youtube.com/watch?v=HqhRLvzTihU\&amp;w=560\&amp;h=315]</p>
+<ul>
+  <li>You can ignore the section on how to run Python from the Windows Command (the next video shows a better way).</li>
+</ul>
+
+<p>How to install Atom and customize Atom
+[youtube https://www.youtube.com/watch?v=jhO827u-yl0]</p>
+<ul>
+  <li>You need to install <code class="language-plaintext highlighter-rouge">pip</code> before you can add some of the packages mentioned in this video.
+<strong>Installing Pip</strong> If you want to install some packages like <code class="language-plaintext highlighter-rouge">python-autopep8</code> or, <code class="language-plaintext highlighter-rouge">linter-flake8</code> you need to install pip
+<a href="https://www.makeuseof.com/tag/install-pip-for-python/">How to Install PIP for Python on Windows, Mac, and Linux</a>
+    <h2 id="mac">Mac</h2>
+  </li>
+</ul>
+
+<p><strong>Option 1: TextWrangler/BBEdit 12 (Easy)</strong>
+<a href="https://www.pythonlearn.com/software-mac.php">Setting up the PythonLearn Environment on a Macintosh</a>
+<strong>Pros:</strong></p>
+<ul>
+  <li>You don’t have to install any software except <a href="http://www.barebones.com/products/TextWrangler/download.html">TextWrangler/BBEdit 12</a></li>
+  <li>You don’t need to use Terminal
+<strong>Cons:</strong></li>
+  <li>you cannot customize TextWrangler to the same degree as like Atom</li>
+  <li>you will be using a different editor at home than at school</li>
+</ul>
+
+<p>Even though Python is pre-installed on Macs, I would suggest updating to <a href="https://www.python.org/downloads/">the latest version.</a>
+<strong>Option 2: Atom</strong>
+Download <a href="https://atom.io/">Atom</a>
+[youtube https://www.youtube.com/watch?v=DjEuROpsvp4\&amp;w=560\&amp;h=315]</p>
+<ul>
+  <li>Ignore the end of the video where he shows how to run different versions of Python.</li>
+</ul>
+
+<p><strong>Pros:</strong></p>
+<ul>
+  <li>You can add packages that will allow you to format your code using the <a href="https://www.python.org/dev/peps/pep-0008/">Python Style Guide</a>.</li>
+  <li>Option for setting the tab to insert 4 spaces</li>
+  <li>Code autocomplete option</li>
+  <li>You will be using the same editor at home and school (the shortcuts will be different)
+<strong>Cons:</strong></li>
+  <li>You have to install additional software to run Python</li>
+  <li>You have to use the Terminal to install additional programs</li>
+</ul>
+
+<p>If you install the Atom package, <code class="language-plaintext highlighter-rouge">platformio-ide-terminal</code>, you can run terminal from inside Atom, otherwise you have to open the Terminal utility separately. Just click on the “+” at the bottom of Atom to open Terminal.
+<img src="../../../../media/2018/09/terminal-install1.jpg" alt="terminal-install" />
+<strong>Installing Pip</strong> If you want to install some packages like <code class="language-plaintext highlighter-rouge">python-autopep8</code> or <code class="language-plaintext highlighter-rouge">linter-flake8</code> you need to install pip
+<a href="https://www.makeuseof.com/tag/install-pip-for-python/">How to Install PIP for Python on Windows, Mac, and Linux</a>
+If Terminal gives you error messages when you to install a package e.g. <code class="language-plaintext highlighter-rouge">pip install autopep8</code>
+<img src="../../../../media/2018/09/pipinstallationerror.jpeg" alt="pipinstallationerror" />
+Try to install again but this time use <code class="language-plaintext highlighter-rouge">pip install --user autopep8</code>
+<img src="../../../../media/2018/09/pipinstallationsuccess.jpeg" alt="pipinstallationsuccess.jpeg" />
+This method also works for installing other packages.</p>
+
+<p>Troubleshooting <code class="language-plaintext highlighter-rouge">Linter-flake8</code>
+If you receive a similar message when you install <code class="language-plaintext highlighter-rouge">linter-flake8</code>:
+<code class="language-plaintext highlighter-rouge">The script flake8 is installed in '/Users/janicecotcher/Library/Python../../../../2.7/bin' which is not on PATH.</code>
+<img src="../../../../media/2018/09/pipinstallationsuccess.jpeg" alt="pipinstallationsuccess" />
+You need to change the Executable Path in the <code class="language-plaintext highlighter-rouge">linter-flake8</code> setting in Atom.</p>
+
+<p>Open settings/preferences in Atom, and find <code class="language-plaintext highlighter-rouge">linter-flake8</code>.
+<img src="../../../../media/2018/09/linter-settings.jpg" alt="linter-settings" /></p>
+
+<p>After you open the linter-flake8 settings, scroll down to Executable Path. Currently, it will say flake8 by default. Check Terminal for the path where flake8 was installed (in this example, <code class="language-plaintext highlighter-rouge">/Users/janicecotcher/Library/Python../../../../2.7/bin</code>). Add the path name in front of <code class="language-plaintext highlighter-rouge">flake8</code>
+<img src="../../../../media/2018/09/flake8-path-name.jpg" alt="flake8-path-name" /></p>]]></content><author><name>Janice Cotcher</name></author><summary type="html"><![CDATA[Windows]]></summary></entry></feed>

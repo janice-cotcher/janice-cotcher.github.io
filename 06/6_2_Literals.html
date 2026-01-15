@@ -13,23 +13,23 @@
 <p><strong>Integer literals</strong>: Any number written without a decimal point is an integer literal. Thus, 42, -17, and 65535 are integer literals.</p>
 <p><strong>Floating-point literals</strong>: Any number written with a decimal point is a floating-point literal. Examples are: 42.0, -9.8, and 3.14159. Be careful that even the literal 42. (decimal point included) is a floating-point literal because it contains a decimal point. An empty sequence of digits after the decimal point is different from no decimal point at all! We can try this out in Python using the print() function:</p>
 	<div class="linkContainer">
-<iframe src="https://trinket.io/embed/python/f28102ee0b" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="../python-widget.html?src=../sketches/6_2_literals.py" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 <p>If you run the program above, you’ll get 42.0 printed to the console.</p>
 	<p>Floating-point literals can also be written in scientific notation. For example, the speed of light is 3×10<sup>8</sup> m/s, a quantity that can be written as the literal 3e8. Again, we can try this with the print() function:</p>
 <div class="linkContainer">
-<iframe src="https://trinket.io/embed/python/b87d923154" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="../python-widget.html?src=../sketches/6_2_literals_1.py" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 	<p>This program will print the value 300000000.0 to the console. Note the decimal point is preceding the rightmost zero in the sequence. Literals written in scientific notation are always floating-point, never integers.</p>
 	<p><strong>String literals</strong>: Recall that in the previous section, we said that strings are sequences of characters. Python specifies a string literal by enclosing a sequence of characters with a pair of single or double-quotes. “Hello world.” and ‘The night is dark and full of terrors.’ are both examples of string literals. Strings can contain spaces because spaces are characters too. Any symbol that appears on the keyboard is a character. Note that there is a difference between the literals ‘7’ and 7; the former is a string literal and does not actually have the numeric value of 7, while the latter is an integer literal, which does. Similarly the literals “3.14159” and 3.14159 are different. The former is a string literal, which does not actually have the numeric value 3.14159, and the latter is a floating-point literal, which does. However, ‘Bazinga!’ and “Bazinga!” are exactly the same.<br>
     So why have two ways of writing string literals? It is so that we can conveniently include single or double quotes as part of a string (after all, the “ symbol is on your keyboard, so it’s also a character!). The string ‘The card says “Moops”.’ is enclosed in single quotes and contains two double quotes as part of the string. The single quotes are not part of the string; they’re special syntax that tells Python to interpret everything between them as a single piece of string data.</p>
 	<div class="linkContainer">
-<iframe src="https://trinket.io/embed/python/32ba3c4d16" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="../python-widget.html?src=../sketches/6_2_literals_2.py" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 	<p>If we run the program above, the phrase The card says “Moops”. will print to the console. Notice that the print() function didn’t print the enclosing single quotes, because they weren’t part of the data.</p>
 	<p>By contrast, let’s look at what happens with the following program:</p>
 	<div class="linkContainer">
-<iframe src="https://trinket.io/embed/python/49518bb049" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="../python-widget.html?src=../sketches/6_2_literals_3.py" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 	<p>If you try to run this program in Processing, you’ll get an error. The reason for this is because Python interprets the characters between the first two double quotes (the first one and the one right before the word Moops) as a string literal. Then the word Moops makes no sense to Python because Python thinks the string literal is finished. So Python tries to interpret Moops as part of the Python language, which it isn’t, so Python doesn’t know what to do and gives up. The bottom line is that you can write single quotes inside string literals enclosed in double-quotes, and double quotes inside string literals enclosed in single quotes.</p>
 	<p>So should you use single or double quotes for strings? Well, there’s no right or wrong answer to this question. Unless you need single or double quotes within a string literal, it doesn’t matter. Typically, one chooses to use either single or double-quotes as one’s “default” style, and only uses the other when necessary.</p>

@@ -10,16 +10,16 @@
 	<h1>5.2.1 The setup() Function</h1>
 	<p>The setup() function is a function that Processing will automatically call for you as the very first thing that happens whenever you run your Processing program. You don’t need to put a function call anywhere in your code to make this happen, and you just need to define the setup() function itself. As you might guess from the name, the setup() function is an ideal place to put instructions about things that only need to happen once and aren’t going to change once your interactive system starts running. The following program is an example of defining the setup() function so as to give us a 300x300 canvas and set the initial background colour to white:</p>
 	<div class="linkContainer">
-<iframe src="https://trinket.io/embed/python/3a5298fc76" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="../python-widget.html?src=../sketches/5_2_1_setup_function.py" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 	<p>Including a definition of the setup() function in your program does one more thing
 which is a little bit subtle. If you define a setup() function in your program, then you cannot use any statements that draw on or modify the Processing canvas outside of any function definition. By including a definition of setup(), you’re telling Processing that you’re making an interactive program, and so it uses slightly different rules. The following program, for example, will result in an error:</p>
 	<div class="linkContainer">
-<iframe src="https://trinket.io/embed/python/e342bc11d1" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="../python-widget.html?src=../sketches/5_2_1_setup_function_1.py" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 	<p>The rect() function call isn’t indented in the code above, so it’s not part of the setup() function. Processing will complain about this. You can put other kinds of statements outside of the setup() function so long as they have nothing to do with the canvas. The following program will work just fine:</p>
 	<div class="linkContainer">
-<iframe src="https://trinket.io/embed/python/58c6d24683" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="../python-widget.html?src=../sketches/5_2_1_setup_function_2.py" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 	<p>Recall that the print() function displays text on the console, not on the canvas, so this is okay.
 Finally, you can put statements that draw shapes inside the setup() function if you want and the shapes will be drawn on the canvas as soon as your program starts running since that is when

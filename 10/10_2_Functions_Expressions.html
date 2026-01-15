@@ -11,17 +11,17 @@
 	<p>Function calls can be used as expressions when the called function returns data (i.e., yields data in the form of function output). Like all other expressions, they have a value. The value of a function call is the function's return value, so we can use these function calls anywhere that we use values.</p>
 	<p>One of the most important things we can do with the value returned by a function call is to store it in a variable. After all, computers don’t remember anything unless we tell them to, and what would be the point of calculating some value only to forget about it immediately? We’ve already seen an example of this, but here it is again:</p>
 	<div class="linkContainer">
-<iframe src="https://trinket.io/embed/python/60dd148088" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="../python-widget.html?src=../sketches/10_2_functions_expressions.py" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 	<p>The function max() returns the largest number from among its arguments. Because the function call result is a value, we can put the function call itself on the right-hand side of an assignment statement. The resulting value will become associated with the variable biggest_number, which we can then use however we like.</p>
 	<p>We can also use function calls as operands of an operator, like so:</p>
 	<div class="linkContainer">
-<iframe src="https://trinket.io/embed/python/3bed916814" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="../python-widget.html?src=../sketches/10_2_functions_expressions_1.py" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 	<p>The code above will print the value 15 to the console because the assignment is the last operation to occur in a Python statement; the expression to the right of the = sign gets evaluated first. The first function call to max() produces the value 5, and the second call produces the value 10. 5 + 10 is 15, so this is the value that gets associated with the variable sum_of_biggest.</p>
 	<p>We can also use function calls as arguments for another function call. We'll do that here with the min() function, which is the same as max() except that it returns the smallest of its arguments rather than the biggest:</p>
 	<div class="linkContainer">
-<iframe src="https://trinket.io/embed/python/e4790a7c73" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="../python-widget.html?src=../sketches/10_2_functions_expressions_2.py" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 	<p>We're using function calls to min() as the 3rd and 4th arguments to the line() function in the code above. As a result, Processing draws a line from coordinate (0, 0) to wherever the mouse is. However, if one of the mouse coordinates is higher than 50, the value 50 will be used instead of the mouse’s actual location due to the min() function calls. The consequence is a program where the user utilizes the mouse to draw a line starting from the top left corner of the canvas, but that line is restricted to a 50x50 area.</p>
 	<br>

@@ -14,14 +14,14 @@
 	<p>
 	Automatically the mouseClicked() function is called once each time the mouse is clicked (e.g. pressed down and then released). Suppose we wanted to write a Processing program in which the user could move the mouse around and draw a circle anywhere they clicked. The following program would do exactly that.</p>
 	<div class="linkContainer">
-<iframe src="https://trinket.io/embed/python/565234ac52" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="../python-widget.html?src=../sketches/5_2_3_event_handling_functions.py" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 	<p>The only thing strange you might note is the word return in the body of the draw() function. Processing requires the draw() function to be there in order to update its canvas, but in this case, we don’t want the function to do anything. So here, the return is just a Python keyword that says the function body is over, and nothing more needs to be done.</p>
 <h2>The keyPressed() function</h2>
 	<p>
 	The keyPressed() function is automatically called whenever a key — any key — on the computer’s keyboard is pressed. Let’s say we wanted to write a Processing program where the user could click to draw circles on the screen, but also give them the option to erase everything and start over by hitting the spacebar. The following program would do the trick.</p>
 	<div class="linkContainer">
-<iframe src="https://trinket.io/embed/python/1a16315c7b" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="../python-widget.html?src=../sketches/5_2_3_event_handling_functions_1.py" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 	<p>This program is nearly identical to our previous one, except that now we’ve added the
 keyPressed() function. In that function definition, we just call the background() function to erase the screen and replace it with a new, empty background any time the user hits the spacebar, or indeed, any key on their keyboard. There are ways to determine the exact key pressed, but we’ll leave that for later.</p>

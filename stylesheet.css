@@ -1,92 +1,58 @@
-@charset "UTF-8";
-/* CSS Document */
-a {
-  text-decoration: none;
-  display: inline-block;
+/*Bolds Heading 2*/
+.front-matter h2, .part h2, .chapter h2, .back-matter h2, body#tinymce.wp-editor h2 {
+font-weight: bold;
+}
+/*Bolds Heading 3s and left aligns them*/
+.front-matter h3, .part h3, .chapter h3, .back-matter h3, body#tinymce.wp-editor h3 {
+font-weight: bold;
+text-align: left;
 }
 
-a:hover {
-  background-color: #ddd;
-  color: black;
+/*Standardizes textbox title styles when they are marked as headings. These styles are for Clarke theme. Change values for other themes if desired.*/
+h1.textbox__title, h2.textbox__title, h3.textbox__title, h4.textbox__title, h5.textbox__title, h6.textbox__title {
+padding: 1.1111111111em 1.1111111111em 1.1111111111em 1.1111111111em;
+margin: -1.1111111111em -1.1111111111em -1em -1.1111111111em;
+font-size: 0.9em;
+color: #fff;
+text-align: left;
+font-weight: normal;
+font-style: normal;
+}
+/*Fix table accessibility and display*/
+.front-matter td, .part td, .chapter td, .back-matter td, body#tinymce.wp-editor td {
+border: 1px solid;
+border-color: #373d3f;
+}
+.front-matter th, .part th, .chapter th, .back-matter th, body#tinymce.wp-editor th {
+border: 1px solid;
+border-color: #373d3f;
+}
+#content table caption {
+caption-side: top;
+color:#000;
+text-align: center; }
+
+td p, .chapter td p + p, td, .back-matter td p + p, td li, td li + li, .chapter td li + li, .chapter td li, td ul{
+font-size: inherit;
+line-height: inherit;
+margin-top: inherit;
 }
 
-.previous {
-  background-color: #f1f1f1;
-  color: black;
-  width: 20%;
-  height: 2em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/*Match font size in multicolumn lists*/ 
+.twocolumn, .threecolumn{ 
+  font-size: inherit; }
+
+/*Styles for end-of-chapter content (image descriptions and attributions headings)*/
+h1.eocp {
+font-size: 0.9em;
+padding-top: 4em;
+}
+h1.eoc {
+font-size: 0.9em;
 }
 
-.next {
-  background-color: #f1f1f1;
-  color: black;
-  width: 20%;
-  height:2em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/*avoid words breaking across lines*/
+.front-matter p, .part p, .chapter p, .back-matter p, body#tinymce.wp-editor p, .front-matter, .part, .chapter, .back-matter, body#tinymce.wp-editor {
+word-break: normal;
+hyphens: manual;
 }
-
-.home {
- background-color: #777;
- color: white;
- width: 20%;
- height: 2em;
- display: flex;
- justify-content: center;
- align-items: center;
-}
-
-.round {
-  border-radius: 50%;
-}
-
-.center {
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.iframe-container{
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-  height: 0;
-}
-.iframe-container iframe{
-  position: absolute;
-  top:0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.linkContainer{
-    display: flex;
-    justify-content: center;
-}
-.borderexample {
- border-width:3px;
- border-style:solid;
- border-color:#287EC7;
-}
-table{table-layout: auto;
-	  width: 100%;}
-@media only screen and (min-width: 700px) {
-    table{
-        table-layout: auto;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-div {text-align: center;}
-h1 {text-align: center;}
-img{max-width: 100%;
-	height: auto;
-    white-space:pre;}
-p {font-family: Arial, Helvetica, sans-serif;}
-td {font-family: Arial, Helvetica, sans-serif; vertical-align: top;}
-li {font-family: Arial, Helvetica, sans-serif;}
-blockquote {font-family: Arial, Helvetica, sans-serif;}

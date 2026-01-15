@@ -16,7 +16,7 @@
     </p>
 	<p>The way to get around this for dealing with user actions is to use the global Python keyword. The global keyword allows us to initialize a variable outside of any function and then make that variable visible to any function that needs to see it. Thus, we could write our program that prints out the user’s name as they type it as follows:</p>
 <div class="linkContainer">
-<iframe src="https://trinket.io/embed/python/bb421aef11" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="../python-widget.html?src=../sketches/7_3_1_user_input_using_variables.py" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 <p>By including the statement global name in both of the function definitions, we are telling these functions that a variable called name exists at a global level, and that they can see and modify this variable.</p>
 <p>In general, the global keyword should be used sparingly, since it wreaks havoc with the concept of proper encapsulation for functions. In our Processing programs, we should mostly only use global variables when dealing with event handlers like keyPressed() or mouseClicked(). The global variables allows us to remember what happened as a result of user inputs, and we can then use this information in other functions like draw().</p>
